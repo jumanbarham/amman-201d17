@@ -90,7 +90,6 @@ function sumArray(sumArr) {
         let statement = sumArr[0] + ',' + sumArr[1] + ',' + sumArr[2] + ' was passed in as an array of numbers, and ' + result2 + ' is their sum.';
         return [result2, statement];
         
-        
         //eslint-disable-line
 }
 
@@ -111,8 +110,16 @@ IMPORTANT DETAIL: You may not use the arithmetic operator * in this function. To
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiplyArray() function and see if the test passes.*/
 
 // Write your code here
-function multiplyArray(multArr) { //eslint-disable-line
+function multiplyArray(multArr) {
+    let result = multiply(multArr[0], multArr[1])[0];
+    let result2 = multiply(result, multArr[2])[0];
+    let statement = 'The numbers ' + multArr[0] + ',' + multArr[1] + ',' + multArr[2] + ' have a product of ' + result2 + '.';
+    return [result2, statement];
 
+    
+    
+    
+    //eslint-disable-line
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
